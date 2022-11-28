@@ -19,6 +19,7 @@ const Product = (props: Props) => {
       height="18rem"
       borderRadius="8px"
       mb="15px"
+      
     >
       <Flex
         width="100%"
