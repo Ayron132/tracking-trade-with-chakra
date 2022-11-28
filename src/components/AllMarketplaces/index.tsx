@@ -42,7 +42,7 @@ const AllMarketplaces = ({ data }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button fontWeight="400" w="100%" colorScheme='messenger' onClick={onOpen}>Open Modal</Button>
+      <Button fontWeight="400" w="100%" colorScheme='messenger' onClick={onOpen}>All Marketplaces</Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
