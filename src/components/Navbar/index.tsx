@@ -10,9 +10,7 @@ type Props = {
   setIsMenuOpen: (value: boolean) => void;
   openFullscreen: () => void;
 }
-/* eslint-disable react/no-children-prop: {
-      "allowFunctions": "true"
-    } */
+
 const Navbar = ({ openFullscreen, isMenuOpen, setIsMenuOpen }: Props) => {
   const router = useRouter()
 
@@ -40,9 +38,9 @@ const Navbar = ({ openFullscreen, isMenuOpen, setIsMenuOpen }: Props) => {
         />
         <InputGroup>
           <InputLeftElement
-            pointerEvents='none'
-            children={<Image boxSize='15px' src='/search.svg' />}
-          />
+            pointerEvents='none'>
+             <Image boxSize='15px' src='/search.svg' />
+            </InputLeftElement>
           <Input bg="gray.100" w="70%" borderRadius="20px" variant='ghost' placeholder='Search...' />
         </InputGroup>
       </Box>

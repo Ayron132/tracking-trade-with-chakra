@@ -34,6 +34,10 @@ const customTheme: Partial<ChakraTheme> = {
       },
       '.apexcharts-menu-item': {
         width: '100%'
+      },
+      '.css-hdd9l7': {
+        width: '100% !important',
+        height: '100% !important'
       }
     }
   },

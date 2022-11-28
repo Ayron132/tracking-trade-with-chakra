@@ -27,9 +27,6 @@ type Props = {
     }
   ]
 }
-/* eslint-disable react/no-children-prop: {
-      "allowFunctions": "true"
-    } */
 const AllMarketplaces = ({ data }: Props) => {
 
   const [selectedList, setSelectedList] = useState<Array<{ name: string }>>([{
@@ -55,9 +52,9 @@ const AllMarketplaces = ({ data }: Props) => {
           <ModalBody borderTop="1px solid #C8C8C8">
             <InputGroup>
               <InputLeftElement
-                pointerEvents='none'
-                children={<Image boxSize='15px' src='/search.svg' />}
-              />
+                pointerEvents='none'>
+                <Image boxSize='15px' src='/search.svg' />
+              </InputLeftElement>
               <Input
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
