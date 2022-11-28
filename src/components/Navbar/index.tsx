@@ -10,7 +10,9 @@ type Props = {
   setIsMenuOpen: (value: boolean) => void;
   openFullscreen: () => void;
 }
-/* eslint-disable react/no-children-prop: 0 */
+/* eslint-disable react/no-children-prop: {
+      "allowFunctions": "true"
+    } */
 const Navbar = ({ openFullscreen, isMenuOpen, setIsMenuOpen }: Props) => {
   const router = useRouter()
 

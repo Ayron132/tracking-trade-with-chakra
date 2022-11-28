@@ -27,7 +27,9 @@ type Props = {
     }
   ]
 }
-/* eslint-disable react/no-children-prop: 0 */
+/* eslint-disable react/no-children-prop: {
+      "allowFunctions": "true"
+    } */
 const AllMarketplaces = ({ data }: Props) => {
 
   const [selectedList, setSelectedList] = useState<Array<{ name: string }>>([{
@@ -88,7 +90,7 @@ const AllMarketplaces = ({ data }: Props) => {
           </ModalBody>
           <ModalFooter borderTop="1px solid #C8C8C8">
             <Button colorScheme='blue' bg="#6c757d" mr={3} onClick={onClose}>
-            Cancel
+              Cancel
             </Button>
             <Button colorScheme='messenger'>Confirm</Button>
           </ModalFooter>
