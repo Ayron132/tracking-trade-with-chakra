@@ -27,7 +27,7 @@ type Props = {
     }
   ]
 }
-/* eslint-disable react/no-children-prop */
+/* eslint-disable react/no-children-prop: 0 */
 const AllMarketplaces = ({ data }: Props) => {
 
   const [selectedList, setSelectedList] = useState<Array<{ name: string }>>([{
