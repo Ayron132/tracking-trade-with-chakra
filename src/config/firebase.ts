@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyB38Z8vJ0mCSd1EuXnD1RqGYZIiwLmwzCc",
+  authDomain: "tracking-trade.firebaseapp.com",
+  projectId: "tracking-trade",
+  storageBucket: "tracking-trade.appspot.com",
+  messagingSenderId: "279508591994",
+  appId: "1:279508591994:web:506b60900a518772b562c3",
+  measurementId: "G-BNJYK2YKLE"
 };
 
 const app = initializeApp(firebaseConfig);
